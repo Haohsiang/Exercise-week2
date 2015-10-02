@@ -22,8 +22,13 @@ void draw()
   
   arc(250, 350, 80, 80, 0, PI);
   
-  Math.abs(eyeRadius--);
-  ellipse(150,200,eyeRadius,eyeRadius);
-  ellipse(350,200,eyeRadius,eyeRadius);
-  
+  eyeRadius--;
+  if (eyeRadius>=0){
+    ellipse(150,200,eyeRadius,eyeRadius);
+    ellipse(350,200,eyeRadius,eyeRadius);
+  }
+  else{
+    ellipse(150,200,-eyeRadius,-eyeRadius);
+    ellipse(350,200,-eyeRadius,-eyeRadius);
+  }
 }
