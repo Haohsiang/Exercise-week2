@@ -2,10 +2,10 @@ PImage imgA,imgB,imgC,imgD;
 int x,y,z,r,t;
 
 void setup(){
-  imgA=loadImage("img/0.jpg");
-  imgB=loadImage("img/1.jpg");
-  imgC=loadImage("img/2.jpg");
-  imgD=loadImage("img/3.jpg");
+  imgA=loadImage("E3Pic/0.jpg");
+  imgB=loadImage("E3Pic/1.jpg");
+  imgC=loadImage("E3Pic/2.jpg");
+  imgD=loadImage("E3Pic/3.jpg");
   size(640,426);
   x=0;
   y=-640;
