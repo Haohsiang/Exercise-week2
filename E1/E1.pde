@@ -23,7 +23,7 @@ void draw()
   arc(250, 350, 80, 80, 0, PI);
   
   eyeRadius--;
-  abs(eyeRadius);
+  Math.abs(eyeRadius);
   ellipse(150,200,abs(eyeRadius),abs(eyeRadius));
   ellipse(350,200,abs(eyeRadius),abs(eyeRadius));
   
