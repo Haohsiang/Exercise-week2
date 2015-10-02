@@ -1,14 +1,14 @@
-int leftRadius, rightRadius;
+int eyeRadius;
 
 void setup()
 {
   size(500,500);
   background(255);
-  leftRadius = 50;
-  rightRadius = 50;
+  eyeRadius = 50;
  
-  ellipse(150,200,leftRadius,leftRadius);
-  ellipse(350,200,rightRadius,rightRadius);
+  ellipse(150,200,eyeRadius,eyeRadius);
+  ellipse(350,200,eyeRadius,eyeRadius);
+ 
 }
 
 void draw()
@@ -21,8 +21,10 @@ void draw()
   ellipse(250,250,400,400);
   
   arc(250, 350, 80, 80, 0, PI);
-
-  ellipse(150,200,leftRadius--,leftRadius--);
-  ellipse(350,200,rightRadius--,rightRadius--);
+  
+  eyeRadius--;
+  abs(eyeRadius);
+  ellipse(150,200,eyeRadius,eyeRadius);
+  ellipse(350,200,eyeRadius,eyeRadius);
   
 }
